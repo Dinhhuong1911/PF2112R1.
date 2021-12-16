@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+.cv {
+    width: 1200px;
+    margin: 20px auto;
+}
+.header {
+    background-color: goldenrod;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+.header::after{
+    content: "";
+    border-top: 20px solid goldenrod;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    left: 165px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 800px 400px;
+    grid-template-rows: auto auto;
+    padding: 10px;
+    color: rgb(143, 108, 21);
+}
+.mt {
+    border: 3px dashed brown;
+    text-align: center;
+    width: 500px;
+    margin-left: 150px;
+}
+textarea {
+    border: none;
+    width: 490px;
+}
+h3 {
+    color: gray;
+}
+.km1 {
+    margin-left: 150px;
+}
+.item-colum1 {
+    display: flex;
+    margin: 10px;
+}
+.item2 {
+    margin-top: 200px;
+}
+.km2 {
+    margin-top: 70px;
+}
+.col2 {
+    margin-left: 30px;
+}
+
+input {
+    width: 500px;
+    border: none;
+    border-bottom: 1px dotted rgb(143, 108, 21);
+}
+.slider input {
+    width: 300px;
+}
+.dotto input{
+    width: 300px;
+    border-width: 5px;
+}
+.dotto2 input{
+    width: 300px;
+    padding-top: 10px;
+}
+.lh {
+    margin-top: 70px;
+}
