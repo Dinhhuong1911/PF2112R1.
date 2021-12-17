@@ -38,6 +38,7 @@
 }
 textarea {
     border: none;
+    outline:none;
     width: 490px;
 }
 h3 {
@@ -63,6 +64,7 @@ h3 {
 input {
     width: 500px;
     border: none;
+    outline:none;
     border-bottom: 1px dotted rgb(143, 108, 21);
 }
 .slider input {
