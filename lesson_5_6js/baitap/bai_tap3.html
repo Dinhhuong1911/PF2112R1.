@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // bài tập 3 tính lãi xuất ngân hàng
+    let tien_vay = prompt("Nhập khoản tiền vay");
+    let lai_xuat = prompt("Nhập lãi xuất %");
+    let nam = prompt("Nhập số năm muốn vay");
+
+    let tien_lai = tien_vay * lai_xuat/100;
+    console.log(tien_lai);
+
+    let tien_phaitra = parseInt(tien_vay) + parseInt(nam * tien_lai);
+    document.write("Số tiền phải trả là:" + tien_phaitra + "VND");
+
+</script>
