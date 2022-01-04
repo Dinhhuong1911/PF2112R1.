@@ -1,0 +1,1 @@
+// document.write("xin chào các bạn")

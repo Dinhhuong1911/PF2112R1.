@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Viết Thư</h1>
+    <label for="name">Tên người nhận:</label>
+    <input type="text" id="name"> <br>
+    <label for="adress"> Địa chỉ:</label>
+    <input type="text" id="adress" > <br>
+    <label for="date">Thời gian:</label>
+    <input type="date" id="date">
+    <div>
+        <button onclick="get_info()">Tạo</button>
+    </div>
+    <div id="result">Chờ anh nhé!</div>
+</body>
+</html>
+<script>
+    // bài tập 1 hiển thị  ngày tháng năm
+    // let number1 = Number(prompt("Nhập năm sinh"));
+    // let number2 = Number(prompt("Nhập tháng sinh"));
+    // let number3 = Number(prompt("Nhập ngày sinh"));
+    // document.write(number3 + "-" + number2 + "-" + number1 );
+
+    // bài tập 2 tính chu vi diện tích hình tròn
+    // const pi = 3.14;
+    // let r = prompt("Nhập bán kính hình tròn");
+    // let cv = 2 * r * pi;
+    // let dt = r * r * pi;
+    // document.write ("Chu vi hình tròn là:" + cv + "<br/>" + "Diện tích hình tròn là: " + dt );
+
+    // bài tập 3 tính lãi xuất ngân hàng
+    // let tien_vay = prompt("Nhập khoản tiền vay");
+    // let lai_xuat = prompt("Nhập lãi xuất %");
+    // let nam = prompt("Nhập số năm muốn vay");
+
+    // let tien_lai = tien_vay * lai_xuat/100;
+    // console.log(tien_lai);
+
+    // let tien_phaitra = parseInt(tien_vay) + parseInt(nam * tien_lai);
+    // document.write("Số tiền phải trả là:" + tien_phaitra + "VND");
+
+    // bài tập 4 in nội dung bức thư
+
+    function get_info() {
+        let name = document.getElementById("name").value;
+        let adress = document.getElementById("adress").value;
+        let date = document.getElementById("date").value;
+        let result = 
+        name + "thương nhớ,"
+        + "<br>"
+        + "<br>"
+        + "Em không biết phải nói sao để anh hiểu rằng, em nhớ anh thật nhiều."
+        + "Em yêu anh đến khi trái tim này tan thành nghìn mảnh."
+        + "Tất cả những gì em yêu thương, em khát khao và cần đến, chính là anh, mãi mãi về sau."
+        + "Em chỉ muốn ở bên anh, và anh yêu hỡi, em sẽ trở thành người phụ nữ như anh mong muốn."
+        + "<br>"
+        + "Có phải em thật tệ hại, khi cứ nghĩ đến anh thật nhiều, thật lâu và nhất là mỗi khi đêm xuống?"
+        + "Em hứa sẽ sẽ cố gắng triệu triệu lần hơn thế. Nhưng hơn tất cả, em chỉ mong một ngày nào đó," 
+        + "anh sẽ tự hào về em, như tự hào về vợ của anh, và mẹ của các con anh (ít nhất là 2 nhé, em vừa mới quyết định đấy!)."
+        + "Em nhớ thật nhiều cảm giác mỗi đêm anh ôm em và ru em ngủ trong vòng tay."
+        + "Đêm nay, em chỉ muốn được gần bên anh… và anh biết không, trái tim em đang đau đớn đến nhường nào."
+        + "<br>"
+        +"Anh yêu thương, đừng bao giờ rời xa em nữa nhé. Yêu anh rất nhiều."
+        + "<br>"
+        + "<b>"+ adress + "</b>" +", ngày "+ "<b>"+ date + "</b>" + ".";
+        document.getElementById("result").innerHTML = result;
+    }
+    
+</script>
