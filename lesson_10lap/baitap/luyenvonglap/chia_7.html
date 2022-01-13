@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //cách 1
+        // let a = 0;
+        // let sum = 0;
+        // for (let i = 0; i < 1000; i++) {
+        //     if (a < 30) {
+        //         if (i % 7 == 0) {
+        //             a += 1;
+        //             sum += i;
+        //             document.write(sum + " ,");
+        //         }
+        //     } else {
+        //         break
+        //     }
+        // }
+
+        //cách 2
+        let num = 7;
+        let i = 1;
+        let sum = 0;
+        while (i <= 30) {
+            if (num % 7 == 0) {
+                document.write(num + ",");
+                sum += num;
+                i++;
+            }
+            num++;
+        }
+        document.write("<br>")
+        document.write(sum);
+    </script>
+</body>
+
+</html>

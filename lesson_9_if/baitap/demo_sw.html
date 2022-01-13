@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Giá hoa quả</h1>
+    <input type="text" id="hoaqua">
+    <button onclick="check()" id="hoaqua">Xem giá</button>
+    <p id="result"></p>
+</body>
+
+</html>
+<script>
+    let oi = "ổi";
+    let duahau = "dưa hấu";
+    let tao = "táo";
+    let xoai = "xoài";
+    let cam = "cam";
+    let chom = "chôm chôm";
+    let mang = "măng cụt";
+
+    function check() {
+        let hoaqua = document.getElementById("hoaqua").value;
+        switch (hoaqua) {
+            case "ổi":
+            case "dưa hấu":
+                document.getElementById("result").innerHTML = "Giá: 20.000VNĐ/1kg"
+                break;
+            case "táo":
+            case "xoài":
+                document.getElementById("result").innerHTML = "Giá: 30.000VNĐ/1kg"
+                break;
+            case "cam":
+            case "chôm chôm":
+                document.getElementById("result").innerHTML = "Giá: 40.000VNĐ/1kg"
+                break;
+            case "măng cụt":
+                document.getElementById("result").innerHTML = "Giá: 50.000VNĐ/1kg"
+                break;
+            default:
+                document.write("Vui lòng nhập lại sản phẩm");
+        }
+    }
+    // let product = prompt("Nhập tên hoa quả");
+    // switch (product) {
+    //     case "ổi":
+    //         document.write("Giá ổi là 20.000VNĐ/1kg");
+    //         break;
+    //     case "Dưa hấu":
+    //         document.write("Giá dưa hấu là 20.000VNĐ/1kg");
+    //         break;
+    //     case "Táo":
+    //         document.write("Giá táo là 30.000VNĐ/1kg");
+    //         break;
+    //     case "Xoài":
+    //         document.write("Giá xoài là 30.000VNĐ/1kg");
+    //         break;
+    //     case "Cam":
+    //         document.write("Giá cam là 40.000VNĐ/1kg");
+    //         break;
+    //     case "Chôm chôm":
+    //         document.write("Giá chôm chôm là 40.000VNĐ/1kg");
+    //         break;
+    //     case "Măng cụt":
+    //         document.write("Giá măng cụt là 50.000VNĐ/1kg");
+    //         break;
+    //     default:
+    //         document.write("Vui lòng nhập lại sản phẩm");
+    // }
+</script>
