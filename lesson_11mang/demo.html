@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let names = ["hoa", "thuý", "đạt", "phương", "thanh", "hà", "hương"];
+        // document.write(names + "<br>");
+
+        //duyệt mảng for in->giúp duyệt nhanh tù đầu đến cuối
+        // let names2 = new Array("tính toán", "hạt điều");
+        // for (let i in names2) {
+        //     document.write(names2[i] + "<br>");
+        // }
+
+        //duyệt mảng for->duyệt từ đầu đến cuối
+        // for (let i = 0; i < names2.length; i++) {
+        //     document.write(names2[i]);
+        // }
+
+        //duyệt từ cuối lên trên
+        // for (let i = names2.length - 1; i >= 0; i--) {
+        //     document.write(names2[i]);
+        // }
+
+        //duyệt ở giữa
+        // for (let i = names.length / 2 - 1; i >= 0; i--) {
+        //     document.write(names[i]);
+        // }
+
+        //duyệt làm tròn
+        // for (let i = Math.round(names.length / 2); i >= 0; i--) {
+        //     document.write(names[i]);
+        // }
+
+        //tìm tên
+        // let name = prompt("Nhập vào tên cần tìm");
+        // let names = ["hoa", "thuý", "đạt", "phương", "thanh", "hà", "hương"];
+        // let flag = false;
+        // let index = 0;
+        // for (let i = names.length; i >= 0; i--) {
+        //     if (names[i] == name) {
+        //         index = i;
+        //         flag = true;
+        //         break;
+        //     }
+        // }
+        // if (flag) {
+        //     document.write("có, nằm ở vị trí thứ " + index);
+        // } else {
+        //     document.write("không");
+        // }
+
+        //tìm số lớn nhất
+        // let numbers = [1, 2, 3, 3.3, 4, 6.7, 5, 6, 7, 8, 20, 9, 10, 11, 12, 13, 14, 15];
+        // let max = numbers[0]; //cho thằng đầu tiên là lớn nhất
+        // for (let i = 0; i < numbers.length; i++) { //duyệt mảng
+        //     if (numbers[i] > max) {
+        //         max = numbers[i];
+        //     }
+        // }
+        // document.write(max);
+
+        //demo
+        let arr = new Array(1, 3, -5, 6, 0, 8, 4);
+        let max = arr[0];
+        let index = 0;
+        for (let i = 1; i < arr.length; i++) {
+            if (max < arr[i]) {
+                max = arr[i];
+                index = i;
+            }
+        }
+        document.write("Số lớn nhất trong mảng là " + max + "<br>" + "Vị trí thứ: " + index)
+    </script>
+
+</body>
+
+</html>
