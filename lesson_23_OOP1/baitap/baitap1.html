@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="Hcn" width="500" height="500" style="border: 1px  solid red;"></canvas>
+</body>
+
+</html>
+<script>
+    class Rectangle {
+        constructor(width, length) {
+            this.width = width;
+            this.length = length;
+        }
+        getPerimeter() {
+            let P = (this.width + this.length) * 2;
+            return P;
+        }
+        getArea() {
+            let S = this.width * this.length;
+            return S;
+        }
+        drawRectangle() {
+            let canvas = document.getElementById("Hcn");
+            let ctx = canvas.getContext('2d');
+            ctx.strokeStyle = "black";
+            ctx.strokeRect(10, 10, this.width, this.length);
+        }
+        setAgain(width, length) {
+            this.width = width;
+            this.length = length;
+        }
+    }
+    let hcn = new Rectangle(400, 300);
+    document.write("<br/>"); //chi dung de xuong dong
+    document.write("S=" + hcn.getArea() + "<br/>");
+    document.write("p=" + hcn.getPerimeter() + "<br/>");
+    hcn.drawRectangle();
+    hcn.setAgain(200, 100);
+    document.write("S=" + hcn.getArea() + "<br/>");
+    document.write("p=" + hcn.getPerimeter() + "<br/>");
+    hcn.drawRectangle();
+</script>

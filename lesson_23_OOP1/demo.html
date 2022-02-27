@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function area() {
+
+        // }
+        class HCN {
+            constructor(a, b, color) {
+                this.a = a;
+                this.b = b;
+                this.color = color;
+            }
+            dt() {
+                return this.a * this.b;
+            }
+            cv() {
+                return (this.a + this.b) * 2;
+            }
+            getColor() {
+                return this.color
+            }
+        }
+        let hcn1 = new HCN(2, 3, "red");
+        document.write(hcn1.dt());
+        document.write(hcn1.cv());
+        document.write(hcn1.getColor());
+    </script>
+</body>
+
+</html>
